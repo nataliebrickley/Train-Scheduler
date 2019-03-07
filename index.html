@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Scheduler</title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!--Header-->
+        <div class="jumbotron text-center">
+            <h1>Anytime is Train Time</h1>
+            <p>Chug A Chug A Chug A Choo Choo!</p>
+        </div>
+        <!--Train Schedule Table-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!--Add Trains-->
+        <form>
+            <!--Name-->
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <!--Destination-->
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" name="destination">
+            </div>
+            <!--First Train Time-->
+            <div class="form-group">
+                <label for="">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" name="destination">
+            </div>
+            <!--Frequency-->
+            <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" name="frequency">
+            </div>
+            <!--Submit-->
+            <input type="submit" name="submit">
+        </form>
+    </div>
     <!--JavaScript-->
     <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
