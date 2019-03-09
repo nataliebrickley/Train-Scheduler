@@ -1,0 +1,17 @@
+body {
+    background:	#004c00;
+    color: #e5c100;
+}
+.jumbotron {
+    background: #e5c100;
+    margin-top: 20px;
+}
+table {
+    background: white;
+}
+h1, h2 {
+    color: black;
+}
+#submit {
+    margin-bottom: 20px;
+}

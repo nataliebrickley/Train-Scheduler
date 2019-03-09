@@ -16,14 +16,16 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <!--Moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <!--Header-->
         <div class="jumbotron text-center">
-            <h1>Anytime is Train Time</h1>
-            <p>Chug A Chug A Chug A Choo Choo!</p>
+            <h1>Train Tracker</h1>
+            <h2>Chug A Chug A Chug A Choo Choo!</p>
         </div>
         <!--Train Schedule Table-->
         <table class="table">
@@ -39,31 +41,31 @@
             <tbody>
 
             </tbody>
-        </table>
+        </table><br>
         <!--Add Trains-->
         <form>
             <!--Name-->
             <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" class="form-control" name="name">
+                <label for="name">Train Name</label>
+                <input type="text" class="form-control" id="name">
             </div>
             <!--Destination-->
             <div class="form-group">
                 <label for="destination">Destination</label>
-                <input type="text" class="form-control" name="destination">
+                <input type="text" class="form-control" id="destination">
             </div>
             <!--First Train Time-->
             <div class="form-group">
                 <label for="">First Train Time (HH:mm - military time)</label>
-                <input type="text" class="form-control" name="destination">
+                <input type="text" class="form-control" id="time">
             </div>
             <!--Frequency-->
             <div class="form-group">
                 <label for="frequency">Frequency (min)</label>
-                <input type="text" class="form-control" name="frequency">
+                <input type="text" class="form-control" id="frequency">
             </div>
             <!--Submit-->
-            <input type="submit" name="submit">
+            <input type="submit" id="submit">
         </form>
     </div>
     <!--JavaScript-->
